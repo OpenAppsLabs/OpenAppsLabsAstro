@@ -8,6 +8,7 @@
     "postbuild": "node -e \"require('fs').writeFileSync('dist/.nojekyll','')\"",
     "preview": "astro preview",
     "astro": "astro",
+    "predeploy": "node ./scripts/clean-gh-cache.js",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
