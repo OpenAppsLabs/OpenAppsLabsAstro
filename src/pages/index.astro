@@ -1,16 +1,98 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Open Apps Labs">
+  <div class="container">
+    
+    <Navbar />
+
+    <header class="hero">
+      <h1>Simple Secure Open</h1>
+      <p>
+        Open source Android apps built with <span class="love">love</span>. No ads. No tracking. Forever Free
+      </p>
+     <div class="btn-group">
+  <a href="https://www.github.com/OpenAppsLabs" class="btn btn-solid">
+    <img src="/icons/github.svg" alt="GitHub" />
+    GitHub
+  </a>
+ <a class="btn btn-outline disabled" aria-disabled="true">
+  <img src="/icons/smartphone.svg" alt="Playstore" />
+  Playstore (Coming Soon)
+</a>
+
+
+</div>
+    </header>
+
+    <div class="section-label" id="apps">PROJECTS</div>
+
+    <div class="bento-grid">
+      
+      <a href="/5g/" class="widget-link">
+          <article class="widget">
+            <div>
+              <div class="widget-header">
+                <div class="app-icon">
+                    <img src="/icons/arrow-down-up.svg" alt="5G" />
+                </div>
+                <svg color="#444" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </div>
+              <h3>5G</h3>
+              <p>Force 5G/NR modes via hidden system settings. Unlock your network.</p>
+            </div>
+            <div class="feature-pills">
+              <span class="pill">NETWORK</span>
+              <span class="pill">UTILITY</span>
+            </div>
+          </article>
+      </a>
+      
+ <a href="/coffee/" class="widget-link">
+          <article class="widget">
+            <div>
+              <div class="widget-header">
+                <div class="app-icon">
+                    <img src="/icons/coffee.svg" alt="Coffee" />
+                </div>
+                <svg color="#444" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </div>
+              <h3>Coffee</h3>
+              <p>Quick Settings tile to keep your screen awake. Simple and effective.</p>
+            </div>
+            <div class="feature-pills">
+              <span class="pill">WIDGET</span>
+              <span class="pill">QS TILE</span>
+            </div>
+          </article>
+      </a>
+
+      <a href="/jotter/" class="widget-link">
+          <article class="widget">
+            <div>
+              <div class="widget-header">
+                <div class="app-icon">
+                    <img src="/icons/book-open.svg" alt="Jotter" />
+                </div>
+                <svg color="#444" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </div>
+              <h3>Jotter</h3>
+              <p>Minimal, offline-first markdown notes. Designed for focus, not distraction.</p>
+            </div>
+            <div class="feature-pills">
+              <span class="pill">OFFLINE</span>
+              <span class="pill">MARKDOWN</span>
+            </div>
+          </article>
+      </a>
+
+
+    </div>
+
+    <Footer />
+
+  </div>
+</Layout>

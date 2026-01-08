@@ -1,43 +1,19 @@
-# Astro Starter Kit: Minimal
+# Hi there,
 
-```sh
-npm create astro@latest -- --template minimal
-```
+I’m learning Android development and exploring AI — just for fun and growth. I build open-source Android apps, aiming for clean, maintainable code and continuous learning.  
+I previously worked in web development (AEM); now I’m shifting my focus to Android and mobile-first ideas. I use AI in dev.
+Now I am making Open Apps - Bunch of open source , useful apps.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📂 Projects
 
-## 🚀 Project Structure
+| Project                                              | Description                                 |
+| ---------------------------------------------------- | ------------------------------------------- |
+| **[Jotter](https://github.com/OpenAppsLabs/Jotter)** | Jotter - A Minimal Notes Application.       |
+| **[5G](https://github.com/OpenAppsLabs/5G)**         | 5G - Network Mode Switcher & Force NR Only. |
+| **[Coffee](https://github.com/OpenAppsLabs/Coffee)** | Coffee - Keep Your Screen Awake.            |
 
-Inside of your Astro project, you'll see the following folders and files:
+### ❤️ Support My Work
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=000000)](https://www.buymeacoffee.com/openappslabs)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-46b3e6?style=flat&logo=ko-fi&logoColor=ffffff)](https://ko-fi.com/openappslabs)
+[![Liberapay](https://img.shields.io/badge/Liberapay-f6c915?style=flat&logo=liberapay&logoColor=000000)](https://liberapay.com/openappslabs)

@@ -1,0 +1,157 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Jotter | Open Apps Labs">
+  <div class="container">
+    
+    <Navbar />
+
+    <header class="hero">
+      <h1>Jotter - Notes app</h1>
+      <p>
+        A modern, open-source <span class="love">note-taking </span>app built with Jetpack Compose.
+        Focus on speed, simplicity, and privacy.
+      </p>
+      
+      <div class="btn-group">
+        <div class="btn-group">
+  <a href="https://www.github.com/OpenAppsLabs/Jotter" class="btn btn-solid">
+    <img src="/icons/github.svg" alt="GitHub" />
+    GitHub
+  </a>
+ <a class="btn btn-outline disabled" aria-disabled="true">
+  <img src="/icons/smartphone.svg" alt="Playstore" />
+  Playstore (Coming Soon)
+</a>
+</div>
+      </div>
+    </header>
+
+    <div class="section-label" id="features">(01) FEATURES</div>
+
+    <div class="bento-grid">
+      <article class="widget">
+        <div>
+          <div class="widget-header">
+            <div class="app-icon">
+  <img src="/icons/pencil-line.svg" alt="Edit Icon" />
+</div>
+          </div>
+          <h3>Rich Notes</h3>
+          <p>
+            Material You theming with dynamic colors. Multiple view modes (List, Grid) and Haptic feedback.
+          </p>
+        </div>
+        <div class="feature-pills">
+          <span class="pill">MATERIAL 3</span>
+          <span class="pill">DYNAMIC</span>
+        </div>
+      </article>
+
+      <article class="widget">
+        <div>
+          <div class="widget-header">
+            <div class="app-icon">
+                <div class="app-icon">
+  <img src="/icons/lock.svg" alt="Lock Icon" />
+</div>
+            </div>
+          </div>
+          <h3>Secure</h3>
+          <p>
+            Lock individual notes with a PIN or pattern. Includes Trash & Archive to keep you organized.
+          </p>
+        </div>
+        <div class="feature-pills">
+          <span class="pill">LOCK</span>
+          <span class="pill">TRASH</span>
+        </div>
+      </article>
+
+      <article class="widget">
+        <div>
+          <div class="widget-header">
+            <div class="app-icon">
+                <div class="app-icon">
+  <img src="/icons/wifi-off.svg" alt="Lock Icon" />
+</div>
+            </div>
+          </div>
+          <h3>Offline First</h3>
+          <p>
+            All data is stored locally using Room Database. No cloud sync, no tracking. Your data is yours.
+          </p>
+        </div>
+        <div class="feature-pills">
+          <span class="pill">LOCAL DB</span>
+          <span class="pill">BACKUP</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="section-label" id="specs">(02) SPECIFICATIONS</div>
+
+    <div class="info-grid jotter-specs">
+      <div class="glass-panel">
+        <p class="bio-text">
+          <strong>Jotter</strong> is built for an offline-first experience with a beautiful, dynamic UI.
+          Backup and restore your notes easily.
+          <br><br>
+          <em>Note: This app is currently in active development.</em>
+        </p>
+        <p class="bio-sub">Built for Minimalists</p>
+      </div>
+
+      <div class="glass-panel" style="padding: 30px">
+  <div class="stack-list">
+    <div class="stack-item">
+      <span>Download</span>
+      <span></span>
+    </div>
+
+    <div class="stack-item">
+      <span>Play Store</span>
+      <span><a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE" target="_blank">Visit</a></span>
+    </div>
+
+    <div class="stack-item">
+      <span>IzzyOnDroid</span>
+      <span><a href="https://apt.izzysoft.de/fdroid/repo" target="_blank">Visit</a></span>
+    </div>
+
+    <div class="stack-item">
+      <span>OpenAPK</span>
+      <span><a href="YOUR_OPENAPK_REPOSITORY_LINK" target="_blank">Visit</a></span>
+    </div>
+
+    <div class="stack-item">
+      <span>Direct APK</span>
+      <span><a href="YOUR_DIRECT_APK_URL.apk" target="_blank">Download</a></span>
+    </div>
+    
+  </div>
+</div>
+
+    </div>
+
+    <Footer />
+
+  </div>
+</Layout>
+
+<style>
+    /* Specific Layout Tweaks for Jotter */
+    .jotter-specs { 
+        display: grid; 
+        grid-template-columns: 2fr 1fr; 
+        gap: 24px; 
+    }
+    
+    @media (max-width: 768px) {
+        .jotter-specs { grid-template-columns: 1fr; }
+        h1 { font-size: 2.8rem; }
+    }
+</style>

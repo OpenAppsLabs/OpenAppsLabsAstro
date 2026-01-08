@@ -1,0 +1,35 @@
+---
+/* src/components/Navbar.astro */
+---
+<nav>
+  <div class="logo">
+    <img src="/icons/code.svg" class="logo-icon" alt="" />
+    
+    <a href="/">OPEN APPS LABS</a>
+    
+    <img src="/icons/code-xml.svg" class="logo-icon" alt="" />
+  </div>
+  
+  <div class="nav-links">
+    <a href="/">HOME</a>
+    <a href="/#apps">APPS</a>
+  </div>
+</nav>
+
+<style>
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between icons and text */
+  }
+
+  .logo-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+  }
+
+  /* Optional: make icons red like your 'love' span */
+  /* This only works if your SVGs use 'currentColor' or if you use a filter */
+  /* .logo-icon { filter: invert(17%) sepia(87%) saturate(6441%) hue-rotate(352deg) brightness(88%) contrast(92%); } */
+</style>
