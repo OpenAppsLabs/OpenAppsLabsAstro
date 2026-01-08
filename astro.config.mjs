@@ -2,7 +2,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://openappslabs.github.io',
-  base: '/OpenAppsLabsAstro',
-  // This tells Astro to use the base path for all internal links
+  site: 'https://openappslabs.github.io/OpenAppsLabsAstro',
+  base: '/OpenAppsLabsAstro/',
 });
