@@ -2,6 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+
+// This handles the /OpenAppsLabsAstro/ prefix automatically
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Open Apps Labs">
@@ -14,30 +17,28 @@ import Footer from '../components/Footer.astro';
       <p>
         Open source Android apps built with <span class="love">love</span>. No ads. No tracking. Forever Free
       </p>
-     <div class="btn-group">
-  <a href="https://www.github.com/OpenAppsLabs" class="btn btn-solid">
-    <img src="OpenAppsLabsAstro/icons/github.svg" alt="GitHub" />
-    GitHub
-  </a>
- <a class="btn btn-outline disabled" aria-disabled="true">
-  <img src="OpenAppsLabsAstro/icons/smartphone.svg" alt="Playstore" />
-  Playstore (Coming Soon)
-</a>
-
-
-</div>
+      <div class="btn-group">
+        <a href="https://www.github.com/OpenAppsLabs" class="btn btn-solid">
+          <img src={`${baseUrl}/icons/github.svg`} alt="GitHub" />
+          GitHub
+        </a>
+        <a class="btn btn-outline disabled" aria-disabled="true">
+          <img src={`${baseUrl}/icons/smartphone.svg`} alt="Playstore" />
+          Playstore (Coming Soon)
+        </a>
+      </div>
     </header>
 
     <div class="section-label" id="apps">PROJECTS</div>
 
     <div class="bento-grid">
       
-      <a href="/5g/" class="widget-link">
+      <a href={`${baseUrl}/5g/`} class="widget-link">
           <article class="widget">
             <div>
               <div class="widget-header">
                 <div class="app-icon">
-                    <img src="OpenAppsLabsAstro/icons/arrow-down-up.svg" alt="5G" />
+                    <img src={`${baseUrl}/icons/arrow-down-up.svg`} alt="5G" />
                 </div>
                 <svg color="#444" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
               </div>
@@ -51,12 +52,12 @@ import Footer from '../components/Footer.astro';
           </article>
       </a>
       
- <a href="/coffee/" class="widget-link">
+      <a href={`${baseUrl}/coffee/`} class="widget-link">
           <article class="widget">
             <div>
               <div class="widget-header">
                 <div class="app-icon">
-                    <img src="OpenAppsLabsAstro/icons/coffee.svg" alt="Coffee" />
+                    <img src={`${baseUrl}/icons/coffee.svg`} alt="Coffee" />
                 </div>
                 <svg color="#444" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
               </div>
@@ -70,12 +71,12 @@ import Footer from '../components/Footer.astro';
           </article>
       </a>
 
-      <a href="/jotter/" class="widget-link">
+      <a href={`${baseUrl}/jotter/`} class="widget-link">
           <article class="widget">
             <div>
               <div class="widget-header">
                 <div class="app-icon">
-                    <img src="OpenAppsLabsAstro/icons/book-open.svg" alt="Jotter" />
+                    <img src={`${baseUrl}/icons/book-open.svg`} alt="Jotter" />
                 </div>
                 <svg color="#444" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
               </div>
@@ -88,7 +89,6 @@ import Footer from '../components/Footer.astro';
             </div>
           </article>
       </a>
-
 
     </div>
 

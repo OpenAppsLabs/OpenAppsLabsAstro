@@ -1,18 +1,19 @@
 ---
 /* src/components/Navbar.astro */
+const baseUrl = import.meta.env.BASE_URL; // Best practice: Use the helper
 ---
 <nav>
   <div class="logo">
-    <img src="OpenAppsLabsAstro/icons/code.svg" class="logo-icon" alt="" />
+    <img src={`${baseUrl}/icons/code.svg`} class="logo-icon" alt="" />
     
-    <a href="/">OPEN APPS LABS</a>
+    <a href={`${baseUrl}/`}>OPEN APPS LABS</a>
     
-    <img src="OpenAppsLabsAstro/icons/code-xml.svg" class="logo-icon" alt="" />
+    <img src={`${baseUrl}/icons/code-xml.svg`} class="logo-icon" alt="" />
   </div>
   
   <div class="nav-links">
-    <a href="/">HOME</a>
-    <a href="/#apps">APPS</a>
+    <a href={`${baseUrl}/`}>HOME</a>
+    <a href={`${baseUrl}/#apps`}>APPS</a>
   </div>
 </nav>
 
@@ -20,7 +21,7 @@
   .logo {
     display: flex;
     align-items: center;
-    gap: 12px; /* Space between icons and text */
+    gap: 12px;
   }
 
   .logo-icon {
@@ -28,8 +29,4 @@
     height: 20px;
     opacity: 0.8;
   }
-
-  /* Optional: make icons red like your 'love' span */
-  /* This only works if your SVGs use 'currentColor' or if you use a filter */
-  /* .logo-icon { filter: invert(17%) sepia(87%) saturate(6441%) hue-rotate(352deg) brightness(88%) contrast(92%); } */
 </style>

@@ -2,6 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+
+// Handles the /OpenAppsLabsAstro/ prefix automatically
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Jotter | Open Apps Labs">
@@ -17,16 +20,14 @@ import Footer from '../../components/Footer.astro';
       </p>
       
       <div class="btn-group">
-        <div class="btn-group">
-  <a href="https://www.github.com/OpenAppsLabs/Jotter" class="btn btn-solid">
-    <img src="OpenAppsLabsAstro/icons/github.svg" alt="GitHub" />
-    GitHub
-  </a>
- <a class="btn btn-outline disabled" aria-disabled="true">
-  <img src="OpenAppsLabsAstro/icons/smartphone.svg" alt="Playstore" />
-  Playstore (Coming Soon)
-</a>
-</div>
+        <a href="https://www.github.com/OpenAppsLabs/Jotter" class="btn btn-solid">
+          <img src={`${baseUrl}/icons/github.svg`} alt="GitHub" />
+          GitHub
+        </a>
+        <a class="btn btn-outline disabled" aria-disabled="true">
+          <img src={`${baseUrl}/icons/smartphone.svg`} alt="Playstore" />
+          Playstore (Coming Soon)
+        </a>
       </div>
     </header>
 
@@ -37,8 +38,8 @@ import Footer from '../../components/Footer.astro';
         <div>
           <div class="widget-header">
             <div class="app-icon">
-  <img src="OpenAppsLabsAstro/icons/pencil-line.svg" alt="Edit Icon" />
-</div>
+              <img src={`${baseUrl}/icons/pencil-line.svg`} alt="Edit Icon" />
+            </div>
           </div>
           <h3>Rich Notes</h3>
           <p>
@@ -55,9 +56,7 @@ import Footer from '../../components/Footer.astro';
         <div>
           <div class="widget-header">
             <div class="app-icon">
-                <div class="app-icon">
-  <img src="OpenAppsLabsAstro/icons/lock.svg" alt="Lock Icon" />
-</div>
+              <img src={`${baseUrl}/icons/lock.svg`} alt="Lock Icon" />
             </div>
           </div>
           <h3>Secure</h3>
@@ -75,9 +74,7 @@ import Footer from '../../components/Footer.astro';
         <div>
           <div class="widget-header">
             <div class="app-icon">
-                <div class="app-icon">
-  <img src="OpenAppsLabsAstro/icons/wifi-off.svg" alt="Lock Icon" />
-</div>
+              <img src={`${baseUrl}/icons/wifi-off.svg`} alt="Offline Icon" />
             </div>
           </div>
           <h3>Offline First</h3>
@@ -106,35 +103,33 @@ import Footer from '../../components/Footer.astro';
       </div>
 
       <div class="glass-panel" style="padding: 30px">
-  <div class="stack-list">
-    <div class="stack-item">
-      <span>Download</span>
-      <span></span>
-    </div>
+        <div class="stack-list">
+          <div class="stack-item">
+            <span>Download</span>
+            <span></span>
+          </div>
 
-    <div class="stack-item">
-      <span>Play Store</span>
-      <span><a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE" target="_blank">Visit</a></span>
-    </div>
+          <div class="stack-item">
+            <span>Play Store</span>
+            <span><a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE" target="_blank">Visit</a></span>
+          </div>
 
-    <div class="stack-item">
-      <span>IzzyOnDroid</span>
-      <span><a href="https://apt.izzysoft.de/fdroid/repo" target="_blank">Visit</a></span>
-    </div>
+          <div class="stack-item">
+            <span>IzzyOnDroid</span>
+            <span><a href="https://apt.izzysoft.de/fdroid/repo" target="_blank">Visit</a></span>
+          </div>
 
-    <div class="stack-item">
-      <span>OpenAPK</span>
-      <span><a href="YOUR_OPENAPK_REPOSITORY_LINK" target="_blank">Visit</a></span>
-    </div>
+          <div class="stack-item">
+            <span>OpenAPK</span>
+            <span><a href="YOUR_OPENAPK_REPOSITORY_LINK" target="_blank">Visit</a></span>
+          </div>
 
-    <div class="stack-item">
-      <span>Direct APK</span>
-      <span><a href="YOUR_DIRECT_APK_URL.apk" target="_blank">Download</a></span>
-    </div>
-    
-  </div>
-</div>
-
+          <div class="stack-item">
+            <span>Direct APK</span>
+            <span><a href="YOUR_DIRECT_APK_URL.apk" target="_blank">Download</a></span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <Footer />

@@ -2,6 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+
+// Handles the /OpenAppsLabsAstro/ prefix automatically
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Coffee | Open Apps Labs">
@@ -17,15 +20,15 @@ import Footer from '../../components/Footer.astro';
       </p>
       
       <div class="btn-group">
-  <a href="https://www.github.com/OpenAppsLabs/Coffee" class="btn btn-solid">
-    <img src="OpenAppsLabsAstro/icons/github.svg" alt="GitHub" />
-    GitHub
-  </a>
- <a class="btn btn-outline disabled" aria-disabled="true">
-  <img src="OpenAppsLabsAstro/icons/smartphone.svg" alt="Playstore" />
-  Playstore (Coming Soon)
-</a>
-</div>
+        <a href="https://www.github.com/OpenAppsLabs/Coffee" class="btn btn-solid">
+          <img src={`${baseUrl}/icons/github.svg`} alt="GitHub" />
+          GitHub
+        </a>
+        <a class="btn btn-outline disabled" aria-disabled="true">
+          <img src={`${baseUrl}/icons/smartphone.svg`} alt="Playstore" />
+          Playstore (Coming Soon)
+        </a>
+      </div>
     </header>
 
     <div class="section-label" id="features">(01) FEATURES</div>
@@ -35,7 +38,7 @@ import Footer from '../../components/Footer.astro';
         <div>
           <div class="widget-header">
             <div class="app-icon">
-                <img src="OpenAppsLabsAstro/icons/sliders-horizontal.svg" width="24" height="24" alt="" />
+                <img src={`${baseUrl}/icons/sliders-horizontal.svg`} width="24" height="24" alt="" />
             </div>
           </div>
           <h3>Quick Tile</h3>
@@ -54,9 +57,7 @@ import Footer from '../../components/Footer.astro';
         <div>
           <div class="widget-header">
             <div class="app-icon">
-                 <div class="app-icon">
-                <img src="OpenAppsLabsAstro/icons/shield.svg" width="24" height="24" alt="" />
-            </div>
+                <img src={`${baseUrl}/icons/shield.svg`} width="24" height="24" alt="" />
             </div>
           </div>
           <h3>Privacy</h3>
@@ -74,7 +75,7 @@ import Footer from '../../components/Footer.astro';
         <div>
           <div class="widget-header">
             <div class="app-icon">
-                <img src="OpenAppsLabsAstro/icons/shapes.svg" width="24" height="24" alt="" />
+                <img src={`${baseUrl}/icons/shapes.svg`} width="24" height="24" alt="" />
             </div>
           </div>
           <h3>Widgets</h3>
@@ -105,32 +106,31 @@ import Footer from '../../components/Footer.astro';
 
       <div class="glass-panel" style="padding: 30px">
         <div class="stack-list">
-    <div class="stack-item">
-      <span>Download</span>
-      <span></span>
-    </div>
+          <div class="stack-item">
+            <span>Download</span>
+            <span></span>
+          </div>
 
-    <div class="stack-item">
-      <span>Play Store</span>
-      <span><a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE" target="_blank">Visit</a></span>
-    </div>
+          <div class="stack-item">
+            <span>Play Store</span>
+            <span><a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE" target="_blank">Visit</a></span>
+          </div>
 
-    <div class="stack-item">
-      <span>IzzyOnDroid</span>
-      <span><a href="https://apt.izzysoft.de/fdroid/repo" target="_blank">Visit</a></span>
-    </div>
+          <div class="stack-item">
+            <span>IzzyOnDroid</span>
+            <span><a href="https://apt.izzysoft.de/fdroid/repo" target="_blank">Visit</a></span>
+          </div>
 
-    <div class="stack-item">
-      <span>OpenAPK</span>
-      <span><a href="YOUR_OPENAPK_REPOSITORY_LINK" target="_blank">Visit</a></span>
-    </div>
+          <div class="stack-item">
+            <span>OpenAPK</span>
+            <span><a href="YOUR_OPENAPK_REPOSITORY_LINK" target="_blank">Visit</a></span>
+          </div>
 
-    <div class="stack-item">
-      <span>Direct APK</span>
-      <span><a href="YOUR_DIRECT_APK_URL.apk" target="_blank">Download</a></span>
-    </div>
-    
-  </div>
+          <div class="stack-item">
+            <span>Direct APK</span>
+            <span><a href="YOUR_DIRECT_APK_URL.apk" target="_blank">Download</a></span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -142,7 +142,6 @@ import Footer from '../../components/Footer.astro';
 <style>
     /* Local Layout Overrides */
     
-    /* Grid Ratio: 2 parts text, 1 part specs */
     .coffee-specs { 
         display: grid; 
         grid-template-columns: 2fr 1fr; 

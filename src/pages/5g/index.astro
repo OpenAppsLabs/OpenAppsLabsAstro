@@ -2,6 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+
+// This handles the /OpenAppsLabsAstro/ prefix automatically
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout title="5G | Open Apps Labs">
@@ -15,19 +18,16 @@ import Footer from '../../components/Footer.astro';
         Modern network switching tool built to lock on <span class="love">NR-Only</span> or NR/LTE.
       </p>
       
-<div class="btn-group">
-  
-  
-  <a href="https://www.github.com/OpenAppsLabs/5G" class="btn btn-solid">
-    <img src="OpenAppsLabsAstro/icons/github.svg" alt="GitHub" />
-    GitHub
-  </a>
- <a class="btn btn-outline disabled" aria-disabled="true">
-  <img src="OpenAppsLabsAstro/icons/smartphone.svg" alt="Playstore" />
-  Playstore (Coming Soon)
-</a>
-</div>
-
+      <div class="btn-group">
+        <a href="https://www.github.com/OpenAppsLabs/5G" class="btn btn-solid">
+          <img src={`${baseUrl}/icons/github.svg`} alt="GitHub" />
+          GitHub
+        </a>
+        <a class="btn btn-outline disabled" aria-disabled="true">
+          <img src={`${baseUrl}/icons/smartphone.svg`} alt="Playstore" />
+          Playstore (Coming Soon)
+        </a>
+      </div>
     </header>
 
     <div class="section-label" id="features">(01) FEATURES</div>
@@ -37,8 +37,8 @@ import Footer from '../../components/Footer.astro';
         <div>
           <div class="widget-header">
             <div class="app-icon">
-  <img src="OpenAppsLabsAstro/icons/activity.svg" alt="Activity Icon" />
-</div>
+              <img src={`${baseUrl}/icons/activity.svg`} alt="Activity Icon" />
+            </div>
           </div>
           <h3>Lock your phone on NR-ONLY</h3>
           <p>
@@ -56,8 +56,8 @@ import Footer from '../../components/Footer.astro';
         <div>
           <div class="widget-header">
             <div class="app-icon">
-  <img src="OpenAppsLabsAstro/icons/shield.svg" alt="Shield Icon" />
-</div>
+              <img src={`${baseUrl}/icons/shield.svg`} alt="Shield Icon" />
+            </div>
           </div>
           <h3>Privacy</h3>
           <p>
@@ -70,12 +70,12 @@ import Footer from '../../components/Footer.astro';
         </div>
       </article>
 
-            <article class="widget">
+      <article class="widget">
         <div>
           <div class="widget-header">
             <div class="app-icon">
-  <img src="OpenAppsLabsAstro/icons/triangle-alert.svg" alt="Shield Icon" />
-</div>
+              <img src={`${baseUrl}/icons/triangle-alert.svg`} alt="Alert Icon" />
+            </div>
           </div>
           <h3>Compat</h3>
           <p>
@@ -102,37 +102,36 @@ import Footer from '../../components/Footer.astro';
 
       <div class="glass-panel" style="padding: 30px">
         <div class="stack-list">
-    <div class="stack-item">
-      <span>Download</span>
-      <span></span>
-    </div>
+          <div class="stack-item">
+            <span>Download</span>
+            <span></span>
+          </div>
 
-    <div class="stack-item">
-      <span>Play Store</span>
-      <span><a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE" target="_blank">Visit</a></span>
-    </div>
+          <div class="stack-item">
+            <span>Play Store</span>
+            <span><a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE" target="_blank">Visit</a></span>
+          </div>
 
-    <div class="stack-item">
-      <span>IzzyOnDroid</span>
-      <span><a href="https://apt.izzysoft.de/fdroid/repo" target="_blank">Visit</a></span>
-    </div>
+          <div class="stack-item">
+            <span>IzzyOnDroid</span>
+            <span><a href="https://apt.izzysoft.de/fdroid/repo" target="_blank">Visit</a></span>
+          </div>
 
-    <div class="stack-item">
-      <span>OpenAPK</span>
-      <span><a href="YOUR_OPENAPK_REPOSITORY_LINK" target="_blank">Visit</a></span>
-    </div>
+          <div class="stack-item">
+            <span>OpenAPK</span>
+            <span><a href="YOUR_OPENAPK_REPOSITORY_LINK" target="_blank">Visit</a></span>
+          </div>
 
-    <div class="stack-item">
-      <span>Direct APK</span>
-      <span><a href="YOUR_DIRECT_APK_URL.apk" target="_blank">Download</a></span>
-    </div>
-    
-  </div>
+          <div class="stack-item">
+            <span>Direct APK</span>
+            <span><a href="YOUR_DIRECT_APK_URL.apk" target="_blank">Download</a></span>
+          </div>
+        </div>
       </div>
     </div>
     
     <div class="privacy-link-wrapper">
-        <a href="/5g/privacy" class="privacy-link">View Privacy Policy</a>
+        <a href={`${baseUrl}/5g/privacy`} class="privacy-link">View Privacy Policy</a>
     </div>
 
     <Footer />
@@ -143,14 +142,12 @@ import Footer from '../../components/Footer.astro';
 <style>
     /* Local Overrides */
     
-    /* Grid Ratio for Specs: 2fr for bio, 1fr for list */
     .app-specs { 
         display: grid; 
         grid-template-columns: 2fr 1fr; 
         gap: 24px; 
     }
     
-    /* Privacy Link Styling */
     .privacy-link-wrapper {
         margin-bottom: 60px;
         text-align: center;
@@ -165,7 +162,6 @@ import Footer from '../../components/Footer.astro';
     }
     .privacy-link:hover { color: var(--text-primary); }
     
-    /* Responsive Adjustments */
     @media (max-width: 768px) {
         .app-specs { grid-template-columns: 1fr; }
         h1 { font-size: 2.8rem; }
