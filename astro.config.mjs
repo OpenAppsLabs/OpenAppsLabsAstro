@@ -1,7 +1,8 @@
-// @ts-check
+// astro.config.mjs
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
 export default defineConfig({
-  base: '/OpenAppsLabsAstro/',
+  site: 'https://openappslabs.github.io',
+  base: '/OpenAppsLabsAstro',
+  // This tells Astro to use the base path for all internal links
 });
