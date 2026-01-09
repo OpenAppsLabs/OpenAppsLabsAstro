@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jotter - A modern, open-source offline-first note-taking app.">
+        <title>Jotter | Open Apps Labs</title>
+
+        <link rel="stylesheet" href="../../css/global.css">
+        <link rel="icon" type="image/svg+xml" href="../../icons/code-xml.svg">
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono:wght@400;500;700&display=swap"
+                rel="stylesheet">
+
+        <style>
+                .jotter-specs {
+                        display: grid;
+                        grid-template-columns: 2fr 1fr;
+                        gap: 24px;
+                }
+
+                .privacy-link-wrapper {
+                        margin-bottom: 60px;
+                        text-align: center;
+                }
+
+                .privacy-link {
+                        font-family: var(--font-mono);
+                        color: var(--text-secondary);
+                        font-size: .85rem;
+                        text-decoration: underline;
+                        transition: color .2s;
+                }
+
+                .privacy-link:hover {
+                        color: var(--text-primary);
+                }
+
+                @media(max-width: 768px) {
+                        .jotter-specs {
+                                grid-template-columns: 1fr;
+                        }
+
+                        h1 {
+                                font-size: 2.8rem;
+                        }
+                }
+
+        </style>
+</head>
+
+<body>
+        <div class="container">
+                <nav>
+                        <div class="logo">
+                                <img src="../../icons/code.svg" class="logo-icon" alt="">
+                                <a href="../../index.html">OPEN APPS LABS</a>
+                                <img src="../../icons/code-xml.svg" class="logo-icon" alt="">
+                        </div>
+                        <div class="nav-links">
+                                <a href="../../index.html">HOME</a>
+                                <a href="../../index.html#apps">APPS</a>
+                        </div>
+                </nav>
+
+                <header class="hero">
+                        <h1>Jotter - Notes app</h1>
+                        <p>
+                                A modern, open-source <span class="love">note-taking</span> app built with Jetpack
+                                Compose. Focus on speed, simplicity, and privacy.
+                        </p>
+                        <div class="btn-group">
+                                <a href="https://www.github.com/OpenAppsLabs/Jotter" class="btn btn-solid">
+                                        <img src="../../icons/github.svg" alt="GitHub"> GitHub
+                                </a>
+                                <a class="btn btn-outline disabled" aria-disabled="true">
+                                        <img src="../../icons/smartphone.svg" alt="Playstore"> Playstore (Coming Soon)
+                                </a>
+                        </div>
+                </header>
+
+                <div class="section-label" id="features">(01) FEATURES</div>
+
+                <div class="bento-grid">
+                        <article class="widget">
+                                <div>
+                                        <div class="widget-header">
+                                                <div class="app-icon">
+                                                        <img src="../../icons/pencil-line.svg" alt="Edit Icon">
+                                                </div>
+                                        </div>
+                                        <h3>Rich Notes</h3>
+                                        <p>Material You theming with dynamic colors. Multiple view modes (List, Grid)
+                                                and Haptic feedback.</p>
+                                </div>
+                                <div class="feature-pills">
+                                        <span class="pill">MATERIAL 3</span>
+                                        <span class="pill">DYNAMIC</span>
+                                </div>
+                        </article>
+
+                        <article class="widget">
+                                <div>
+                                        <div class="widget-header">
+                                                <div class="app-icon">
+                                                        <img src="../../icons/lock.svg" alt="Lock Icon">
+                                                </div>
+                                        </div>
+                                        <h3>Secure</h3>
+                                        <p>Lock individual notes with a PIN or pattern. Includes Trash & Archive to keep
+                                                you organized.</p>
+                                </div>
+                                <div class="feature-pills">
+                                        <span class="pill">LOCK</span>
+                                        <span class="pill">TRASH</span>
+                                </div>
+                        </article>
+
+                        <article class="widget">
+                                <div>
+                                        <div class="widget-header">
+                                                <div class="app-icon">
+                                                        <img src="../../icons/wifi-off.svg" alt="Offline Icon">
+                                                </div>
+                                        </div>
+                                        <h3>Offline First</h3>
+                                        <p>All data is stored locally using Room Database. No cloud sync, no tracking.
+                                                Your data is yours.</p>
+                                </div>
+                                <div class="feature-pills">
+                                        <span class="pill">LOCAL DB</span>
+                                        <span class="pill">BACKUP</span>
+                                </div>
+                        </article>
+                </div>
+
+                <div class="section-label" id="specs">(02) SPECIFICATIONS</div>
+
+                <div class="info-grid jotter-specs">
+                        <div class="glass-panel">
+                                <p class="bio-text">
+                                        <strong>Jotter</strong> is built for an offline-first experience with a
+                                        beautiful, dynamic UI.
+                                        Backup and restore your notes easily.
+                                        <br><br>
+                                        <em>Note: This app is currently in active development.</em>
+                                </p>
+                                <p class="bio-sub">Built for Minimalists</p>
+                        </div>
+
+                        <div class="glass-panel" style="padding: 30px">
+                                <div class="stack-list">
+                                        <div class="stack-item"><span>Download</span><span></span></div>
+                                        <div class="stack-item"><span>Play Store</span><span><a href="#"
+                                                                target="_blank">Visit</a></span></div>
+                                        <div class="stack-item"><span>IzzyOnDroid</span><span><a href="#"
+                                                                target="_blank">Visit</a></span></div>
+                                        <div class="stack-item"><span>OpenAPK</span><span><a href="#"
+                                                                target="_blank">Visit</a></span></div>
+                                        <div class="stack-item"><span>Direct APK</span><span><a href="#"
+                                                                target="_blank">Download</a></span></div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="privacy-link-wrapper">
+                        <a href="./Jotter/privacy" class="privacy-link">View Privacy Policy</a>
+                </div>
+
+                <footer>
+                        <p class="copyright">OPEN APPS LABS &copy; 2026</p>
+                </footer>
+        </div>
+</body>
+
+</html>

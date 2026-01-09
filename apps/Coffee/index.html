@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coffee - Keep your Android screen awake with a simple toggle.">
+    <title>Coffee | Open Apps Labs</title>
+
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="icon" type="image/svg+xml" href="../../icons/code-xml.svg">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .coffee-specs {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+        }
+
+        .privacy-link-wrapper {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .privacy-link {
+            font-family: var(--font-mono);
+            color: var(--text-secondary);
+            font-size: .85rem;
+            text-decoration: underline;
+            transition: color .2s;
+        }
+
+        .privacy-link:hover {
+            color: var(--text-primary);
+        }
+
+        @media(max-width: 768px) {
+            .coffee-specs {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="../../icons/code.svg" class="logo-icon" alt="">
+                <a href="../../index.html">OPEN APPS LABS</a>
+                <img src="../../icons/code-xml.svg" class="logo-icon" alt="">
+            </div>
+            <div class="nav-links">
+                <a href="../../index.html">HOME</a>
+                <a href="../../index.html#apps">APPS</a>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <h1>Coffee - Keep Screen Awake</h1>
+            <p>
+                Prevent screen dimming. A modern <span class="love">Widget</span> and quick settings <span
+                    class="love">Tile</span> built with Jetpack Compose.
+            </p>
+            <div class="btn-group">
+                <a href="https://www.github.com/OpenAppsLabs/Coffee" class="btn btn-solid">
+                    <img src="../../icons/github.svg" alt="GitHub"> GitHub
+                </a>
+                <a class="btn btn-outline disabled" aria-disabled="true">
+                    <img src="../../icons/smartphone.svg" alt="Playstore"> Playstore (Coming Soon)
+                </a>
+            </div>
+        </header>
+
+        <div class="section-label" id="features">(01) FEATURES</div>
+
+        <div class="bento-grid">
+            <article class="widget">
+                <div>
+                    <div class="widget-header">
+                        <div class="app-icon">
+                            <img src="../../icons/sliders-horizontal.svg" alt="Quick Tile">
+                        </div>
+                    </div>
+                    <h3>Quick Tile</h3>
+                    <p>One-tap toggle from your status bar. Custom timers (1-60 min) or Indefinite mode.</p>
+                </div>
+                <div class="feature-pills">
+                    <span class="pill">QS TILE</span>
+                    <span class="pill">TIMER</span>
+                    <span class="pill">INFINITE</span>
+                </div>
+            </article>
+
+            <article class="widget">
+                <div>
+                    <div class="widget-header">
+                        <div class="app-icon">
+                            <img src="../../icons/shield.svg" alt="Privacy">
+                        </div>
+                    </div>
+                    <h3>Privacy</h3>
+                    <p>100% offline and privacy-focused. No ads, no trackers, minimal permissions.</p>
+                </div>
+                <div class="feature-pills">
+                    <span class="pill">NO ADS</span>
+                    <span class="pill">OFFLINE</span>
+                </div>
+            </article>
+
+            <article class="widget">
+                <div>
+                    <div class="widget-header">
+                        <div class="app-icon">
+                            <img src="../../icons/shapes.svg" alt="Widgets">
+                        </div>
+                    </div>
+                    <h3>Widgets</h3>
+                    <p>Use it right from your home screen. Customizable sizes and shapes.</p>
+                </div>
+                <div class="feature-pills">
+                    <span class="pill">20+ SHAPES</span>
+                    <span class="pill">RESIZABLE</span>
+                </div>
+            </article>
+        </div>
+
+        <div class="section-label" id="specs">(02) SPECIFICATIONS</div>
+
+        <div class="info-grid coffee-specs">
+            <div class="glass-panel">
+                <p class="bio-text">
+                    <strong>Coffee</strong> is a minimal utility designed for focus. Whether you are reading long
+                    articles, navigating, or developing, keep your screen on without touching it.
+                    <br><br>
+                    Supports <strong>Material You</strong> dynamic theming.
+                </p>
+                <p class="bio-sub">Built for Readers & Developers</p>
+            </div>
+
+            <div class="glass-panel" style="padding: 30px">
+                <div class="stack-list">
+                    <div class="stack-item"><span>Download</span><span></span></div>
+                    <div class="stack-item"><span>Play Store</span><span><a href="#" target="_blank">Visit</a></span>
+                    </div>
+                    <div class="stack-item"><span>IzzyOnDroid</span><span><a href="#" target="_blank">Visit</a></span>
+                    </div>
+                    <div class="stack-item"><span>OpenAPK</span><span><a href="#" target="_blank">Visit</a></span></div>
+                    <div class="stack-item"><span>Direct APK</span><span><a href="#" target="_blank">Download</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-link-wrapper">
+            <a href="./Coffee/privacy" class="privacy-link">View Privacy Policy</a>
+        </div>
+
+        <footer>
+            <p class="copyright">OPEN APPS LABS &copy; 2026</p>
+        </footer>
+    </div>
+</body>
+
+</html>
