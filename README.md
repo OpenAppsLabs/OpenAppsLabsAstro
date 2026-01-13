@@ -14,6 +14,23 @@ Now I am making Open Apps - Bunch of open source , useful apps.
 
 ### ❤️ Support My Work
 
-[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=000000)](https://www.buymeacoffee.com/openappslabs)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-46b3e6?style=flat&logo=ko-fi&logoColor=ffffff)](https://ko-fi.com/openappslabs)
-[![Liberapay](https://img.shields.io/badge/Liberapay-f6c915?style=flat&logo=liberapay&logoColor=000000)](https://liberapay.com/openappslabs)
+<a href="https://buymeacoffee.com/openappslabs" target="_blank">
+<img
+	src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+	alt="Buy Me A Coffee"
+	style="height: 40px !important"/>
+</a>
+&nbsp;
+<a
+	href="https://liberapay.com/openappslabs/" target="_blank">
+  <img
+	src="https://liberapay.com/assets/widgets/donate.svg"
+	alt="Liberapay"
+	style="height: 40px !important"/>
+</a>
+&nbsp;
+<a href="https://ko-fi.com/openappslabs" target="_blank">
+  <img src="https://storage.ko-fi.com/cdn/brandasset/kofi_s_tag_dark.png"
+	alt="Ko-fi"
+	style="height: 40px !important"/>
+</a>
