@@ -8,7 +8,7 @@ Now I am making Open Apps - Bunch of open source , useful apps.
 
 | Project                                              | Description                                 |
 | ---------------------------------------------------- | ------------------------------------------- |
-| **[Jotter](https://github.com/OpenAppsLabs/Jotter)** | Jotter - A Minimal Notes Application.       |
+| **[Jotter](https://github.com/OpenAppsLabs/Jotter)** | Jotter - Not Just Another Notes App.       |
 | **[5G](https://github.com/OpenAppsLabs/5G)**         | 5G - Network Mode Switcher & Force NR Only. |
 | **[Coffee](https://github.com/OpenAppsLabs/Coffee)** | Coffee - Keep Your Screen Awake.            |
 
